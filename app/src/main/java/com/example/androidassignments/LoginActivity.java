@@ -18,7 +18,7 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-
+        Log.i(ACTIVITY_NAME, "In onCreate()");
 
         SharedPreferences prefs = getSharedPreferences("AssignmentPrefs", Context.MODE_PRIVATE);
 
@@ -27,25 +27,22 @@ public class LoginActivity extends AppCompatActivity {
         emailEditText.setText(default_email);
 
         Button loginButton = (Button) findViewById(R.id.loginButton);
-        loginButton.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v) {
-                // Update saved email
-                SharedPreferences.Editor edit = prefs.edit();
-                String enteredEmail = emailEditText.getText().toString();
-                edit.putString("DefaultEmail", enteredEmail);
-                edit.commit();
+        loginButton.setOnClickListener(v -> {
+            // Update saved email
+            SharedPreferences.Editor edit = prefs.edit();
+            String enteredEmail = emailEditText.getText().toString();
+            edit.putString("DefaultEmail", enteredEmail);
+            edit.commit();
 
-                // Switch to MainActivity
-                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-                startActivity(intent);
-            }
+            // Switch to MainActivity
+            Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+            startActivity(intent);
         });
     }
 
     @Override
     protected void onStart(){
         super.onStart();
-
         Log.i(ACTIVITY_NAME, "In onStart()");
     }
 

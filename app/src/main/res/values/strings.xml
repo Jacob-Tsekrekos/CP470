@@ -6,4 +6,8 @@
     <string name="login_name">Username</string>
     <string name="password">Password</string>
     <string name="What_do">What does this do?</string>
+    <string name="ok">Ok</string>
+    <string name="dialog_message">Would you like to return to the main screen?</string>
+    <string name="cancel">Cancel</string>
+    <string name="dialog_title">Return to main</string>
 </resources>
