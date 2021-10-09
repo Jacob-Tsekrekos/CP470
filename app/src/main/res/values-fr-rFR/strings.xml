@@ -11,4 +11,7 @@
     <string name="ok">D\'accord</string>
     <string name="dialog_title">Revenir à la page principale</string>
     <string name="cancel">Annuler</string>
+    <string name="start_chat">Commencez chat</string>
+    <string name="send">Envoyez</string>
+    <!--"Bavardez" instead of "commencez chat"?-->
 </resources>
