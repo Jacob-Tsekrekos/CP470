@@ -14,7 +14,7 @@
         android:layout_above="@id/sendButton"
         android:layout_alignParentEnd="true"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"></ListView>
+        android:layout_alignParentTop="true"/>
 
     <!--Not constrained properly! (Excessive text hidden behind button-->
     <EditText
