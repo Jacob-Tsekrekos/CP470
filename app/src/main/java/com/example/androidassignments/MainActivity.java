@@ -29,15 +29,22 @@ public class MainActivity extends AppCompatActivity {
 
         Button chatButton = (Button) findViewById(R.id.chatButton);
         chatButton.setOnClickListener(v -> {
-            Log.i(ACTIVITY_NAME, "User clicked 'Start Chat'");
+            Log.i(ACTIVITY_NAME, "User tapped 'Start Chat'");
             Intent intent = new Intent(MainActivity.this, ChatWindow.class);
             startActivity(intent);
         });
 
         Button toolButton = (Button) findViewById(R.id.toolButton);
         toolButton.setOnClickListener(v -> {
-            Log.i(ACTIVITY_NAME, "User clicked 'Start Test Toolbar'");
+            Log.i(ACTIVITY_NAME, "User tapped 'Start Test Toolbar'");
             Intent intent = new Intent(MainActivity.this, TestToolbar.class);
+            startActivity(intent);
+        });
+
+        Button forecastButton = (Button) findViewById(R.id.forecastButton);
+        forecastButton.setOnClickListener(v->{
+            Log.i(ACTIVITY_NAME, "User tapped 'Weather Forecast'");
+            Intent intent = new Intent(MainActivity.this, WeatherForecast.class);
             startActivity(intent);
         });
     }

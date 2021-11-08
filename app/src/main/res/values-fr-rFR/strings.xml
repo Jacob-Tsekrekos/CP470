@@ -19,5 +19,11 @@
     <string name="test_toolbar">Testez la Barre d\'Outils</string>
     <string name="go_back">Voudriez-vous revenir à la page arrière?</string>
     <string name="new_message">Nouveau message</string>
+    <string name="weather_forecast">Météo</string>
+    <string name="currently">Maintenant:</string>
+    <string name="low">Bas:</string>
+    <string name="high">Haut:</string>
+    <string name="weather_in">La météo à</string>
+
     <!--"Bavardez" instead of "commencez chat"?-->
 </resources>

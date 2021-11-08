@@ -10,15 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidAssignments">
         <activity
+            android:name=".WeatherForecast"
+            android:exported="false" />
+        <activity
             android:name=".TestToolbar"
             android:exported="true"
             android:label="@string/title_activity_test_toolbar" />
-
         <activity
             android:name=".ChatWindow"
             android:exported="true"
             android:parentActivityName=".MainActivity" />
-
         <activity
             android:name=".ListItemsActivity"
             android:exported="true"
@@ -35,6 +36,7 @@
         <activity
             android:name=".MainActivity"
             android:exported="true" />
+
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
             android:value="MainActivity" />
@@ -43,5 +45,11 @@
     <uses-feature
         android:name="android.hardware.camera"
         android:required="true" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET"/>
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
 
 </manifest>

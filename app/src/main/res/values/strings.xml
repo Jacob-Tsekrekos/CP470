@@ -18,15 +18,13 @@
     <string name="test_toolbar">Test Toolbar</string>
     <string name="go_back">Do you want to go back?</string>
 
-    <string name="title_activity_test_toolbar">TestToolbar</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
+    <string name="title_activity_test_toolbar" translatable="false">TestToolbar</string>
 
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
-    <string name="new_message">New Message</string>
+    <string name="weather_forecast">Forecast</string>
+    <string name="new_message">New message</string>
+    <string name="currently">Currently:</string>
+    <string name="low">Low:</string>
+    <string name="high">High:</string>
+    <string name="weather_in">Weather in </string>
 
 </resources>
