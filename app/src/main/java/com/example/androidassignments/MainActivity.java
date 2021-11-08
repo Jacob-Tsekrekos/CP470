@@ -93,4 +93,10 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        setResult(Activity.RESULT_CANCELED);
+        finish();
+    }
 }

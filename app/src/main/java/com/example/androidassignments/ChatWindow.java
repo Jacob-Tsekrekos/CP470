@@ -3,6 +3,7 @@ package com.example.androidassignments;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -57,7 +58,6 @@ public class ChatWindow extends AppCompatActivity {
             String msg = messageEditText.getText().toString();
             messageList.add(msg);
 
-            // todo: verify this works with auto-increment id
             ContentValues cVals = new ContentValues();
             cVals.put(KEY_MESSAGE, msg);
 
@@ -98,6 +98,13 @@ public class ChatWindow extends AppCompatActivity {
         // OnDestroy doesn't save the data correctly
         super.onDestroy();
         msgDB.close();
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        setResult(Activity.RESULT_CANCELED);
+        finish();
     }
 
     private class ChatAdapter extends ArrayAdapter<String>{

@@ -122,4 +122,11 @@ public class ListItemsActivity extends AppCompatActivity {
         if (requestCode == 1 && data != null)
             imageButton.setImageBitmap((Bitmap) data);
     }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        setResult(Activity.RESULT_CANCELED);
+        finish();
+    }
 }
